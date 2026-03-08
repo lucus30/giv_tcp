@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   GivTCP:
-    image: britkat/giv_tcp-dev:latest
+    image: lucus30/giv_tcp:latest
     ports:
       - "1883:1883"                   # MQTT
       - "8098:8099"                   # REST and Config web server (https on 8098)
@@ -12,4 +12,4 @@ services:
     restart: always
     privileged: true
     environment:
-      - TZ = "Europe/London"
+      - TZ=Australia/Melbourne
