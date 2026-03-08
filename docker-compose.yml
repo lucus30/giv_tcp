@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   GivTCP:
-    image: lucus30/giv_tcp:latest
+    image: lucus30/giv_tcp
     ports:
       - "1883:1883"                   # MQTT
       - "8098:8099"                   # REST and Config web server (https on 8098)
