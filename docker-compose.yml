@@ -1,7 +1,11 @@
 version: "3.9"
 services:
   GivTCP:
+<<<<<<< HEAD
+    image: lucus30/giv_tcp
+=======
     image: britkat/giv_tcp-dev:latest
+>>>>>>> parent of beec342 (Update docker-compose.yml)
     ports:
       - "1883:1883"                   # MQTT
       - "8098:8099"                   # REST and Config web server (https on 8098)
